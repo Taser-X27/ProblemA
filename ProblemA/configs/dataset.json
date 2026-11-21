@@ -1,0 +1,14 @@
+{
+  "data_root": "dataset",
+  "classes": 40,
+  "modalities": [
+    "Depth_Color",
+    "IR"
+  ],
+  "splits": {
+    "train": 1995,
+    "validation": 466,
+    "test": 470
+  },
+  "test_note": "Neural-model training uses train only; checkpoint selection uses validation. Export probabilities with evaluate.py and apply the user-provided fixed 40-class weights from configs/fusion.json with fusion.py. Weights historically fitted on validation+test; these splits are not independent held-out fusion evaluation."
+}

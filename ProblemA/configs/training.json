@@ -1,0 +1,35 @@
+{
+  "vit": {
+    "epochs": 60,
+    "warmup_epochs": 6,
+    "lr": 5e-05,
+    "head_lr": 0.0003,
+    "val_every": 5,
+    "effective_batch_size": 32
+  },
+  "cnn": {
+    "seed": 3407,
+    "epochs": 40,
+    "batch_size": 8,
+    "grad_accum": 2,
+    "lr_encoder": 1e-05,
+    "lr_head": 0.001,
+    "lr_interaction": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_epochs": 2,
+    "min_lr_factor": 0.05,
+    "smoothing": 0.05,
+    "aux_weight": 0.25,
+    "grad_clip": 5.0,
+    "grad_scaler_init": 1024.0,
+    "validation_every": 5
+  },
+  "distill": {
+    "epochs": 30,
+    "warmup_epochs": 3,
+    "lr": 1e-05,
+    "linear_lr": 0.0001,
+    "val_every": 5,
+    "effective_batch_size": 32
+  }
+}
