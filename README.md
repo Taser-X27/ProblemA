@@ -1,10 +1,10 @@
-# CUHK-X：ViT-S与CNN重新训练工程
+# UESTC DL competition ProblemA
 
 ProblemA 从公开预训练权重开始复现 ViT-S 和 CNN 动作分类。源码包含固定的 40 类融合权重。准备好原始数据和预训练权重后，复现流程会生成 `cache/` 和 `results/`。
 
 ## 从零复现当前结果
 
-在 `ProblemA/` 内依次运行以下命令。原实验使用 Python 3.12、PyTorch `2.11.0+cu128`、torchvision `0.26.0+cu128` 和 RTX 5070。ViT 蒸馏与训练需要支持 BF16 的 NVIDIA GPU。Windows 可使用原 `pt_qwen` 环境。Linux 需要安装对应平台的 CUDA 版 PyTorch、torchvision 和 `requirements.txt` 中的依赖，项目会使用 Linux 环境已安装的包。
+在 `ProblemA/` 内依次运行以下命令。原实验使用 Python 3.12、PyTorch `2.11.0+cu128`、torchvision `0.26.0+cu128` 和 RTX 5070。ViT 蒸馏与训练需要支持 BF16 的 NVIDIA GPU。Linux 需要安装对应平台的 CUDA 版 PyTorch、torchvision 和 `requirements.txt` 中的依赖，项目会使用 Linux 环境已安装的包。
 
 ```bash
 # 1. H→S 蒸馏，30 轮
